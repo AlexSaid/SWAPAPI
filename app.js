@@ -15,7 +15,7 @@ var spin = document.querySelector(".spin");
 btn.addEventListener("click", function () {
 
     var randomNumber = Math.floor(Math.random() * 10) + 1;
-    var url = "https://swapi.co/api/people/" + randomNumber;
+    var url = "https://cors-anywhere.herokuapp.com/https://swapi.co/api/people/" + randomNumber;
     setTimeout(myTimeOut, 0);
     fetch(url)
 
