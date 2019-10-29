@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("astronomy-constellation-dark-998641.jpg");
+}
+
+h1,
+h2,
+h3,
+p {
+    border-bottom: 1px solid #e3e1e1;
+    margin-left: 20px;
+    padding: 5px;
+    color: #c1c1c1;
+    width: 80vw;
+    margin: 10px auto;
+}
+
+button {
+    outline: none;
+    border: 0;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+    background-color: #262626;
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+span {
+    margin-left: 10px;
+}
+
+.word-container {
+    margin-top: 10px;
+    min-height: 80vh;
+}
+
+@media screen and (max-width: 580px) {
+
+    h1,
+    h2,
+    h3,
+    p {
+        border-bottom: 1px solid #e3e1e1;
+        margin-left: 10px;
+        padding-left: 10px;
+        color: #c1c1c1;
+        width: 99vw;
+        margin: 10px auto;
+    }
+}
+
+.spiner {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #011001;
+    overflow: hidden;
+}
+
+.errr {
+    position: absolute;
+}
+
+.spin {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-top: -30px;
+    border-left-color: #5d5dde;
+    margin-left: -30px;
+    -webkit-animation: spaner 0.2s linear infinite;
+    animation: spaner 0.2s linear infinite;
+    display: none;
+}
+
+@-webkit-keyframes spaner {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spaner {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.add {
+    display: block;
+}
